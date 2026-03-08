@@ -1,14 +1,5 @@
 # push 03/07/2026 14:49:43
 class Operator(object):
-    """The Operator class is for operators(+, -, *, / etc)
-
-    Example:
-        '+', '-', '*' etc
-
-    Note:
-        Not to be confused with 'operator' and 'operand' properties of 'Function' class
-    """
-
     def __init__(self):
         self.tid = None
         self.scope = None
@@ -24,15 +15,6 @@ class Operator(object):
 
 
 class Binary(Operator):
-    """Binary operator takes two operands
-
-    Example:
-        '2 + 2', '5/6' etc
-
-    Extends:
-        Operator
-    """
-
     def __init__(self, value=None):
         super().__init__()
         if value is not None:
@@ -115,3 +97,4 @@ class EqualTo(Binary):
     def __init__(self):
         super().__init__()
         self.value = '='
+
