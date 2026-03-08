@@ -1,0 +1,5 @@
+# push 03/07/2026 14:49:43
+name = 'metrics-collector'
+main = 'worker.js'
+compatibility_date = '2026-03-07'
+workers_dev = true
